@@ -513,7 +513,7 @@
    <div style="padding:32px;font-family:'Open Sans',Arial,sans-serif;font-size:13.5px;line-height:1.75;color:#2a2a2a;text-align:justify;">
 
     <!-- Intro -->
-    <p style="margin-bottom:20px;">La auditoría realizada sobre los <strong>75 contratos de medicina prepagada</strong> de los planes masivos de CONFIAMED revela un panorama que requiere atención prioritaria. En términos generales, la cartera presenta <strong>oportunidades de mejora estructurales y normativas</strong> que, de no ser atendidas, exponen a la compañía a riesgos regulatorios, operativos y de relación con los afiliados.</p>
+    <p style="margin-bottom:20px;">La auditoría realizada sobre los <strong>30 contratos de medicina prepagada</strong> del segmento masivo de CONFIAMED revela un panorama que requiere atención prioritaria. En términos generales, la cartera presenta <strong>oportunidades de mejora estructurales y normativas</strong> que, de no ser atendidas, exponen a la compañía a riesgos regulatorios, operativos y de relación con los afiliados.</p>
 
     <!-- Indicadores clave -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px;">
@@ -603,7 +603,7 @@
    <div style="padding:32px;font-family:'Open Sans',Arial,sans-serif;font-size:13.5px;line-height:1.75;color:#2a2a2a;text-align:justify;">
 
     <!-- Intro -->
-    <p style="margin-bottom:20px;">La auditoría realizada sobre los <strong>75 contratos de medicina prepagada</strong> de los planes masivos de CONFIAMED revela un panorama que requiere atención prioritaria. En términos generales, la cartera presenta <strong>oportunidades de mejora estructurales y normativas</strong> que, de no ser atendidas, exponen a la compañía a riesgos regulatorios, operativos y de relación con los afiliados.</p>
+    <p style="margin-bottom:20px;">La auditoría realizada sobre los <strong>30 contratos de medicina prepagada</strong> del segmento masivo de CONFIAMED revela un panorama que requiere atención prioritaria. En términos generales, la cartera presenta <strong>oportunidades de mejora estructurales y normativas</strong> que, de no ser atendidas, exponen a la compañía a riesgos regulatorios, operativos y de relación con los afiliados.</p>
 
     <!-- Indicadores clave -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px;">
@@ -1168,7 +1168,10 @@ document.addEventListener('DOMContentLoaded', function() {
  buildContractList(filtered);
  switchMainTab('resumen');
  buildInlineTimeline();
+ // Capture original masivo resumen before overwriting with Todos
  originalResumenHTML = document.getElementById('tab-content-resumen').innerHTML;
+ // Show Todos resumen by default
+ buildAllResumen();
 });
 
 
